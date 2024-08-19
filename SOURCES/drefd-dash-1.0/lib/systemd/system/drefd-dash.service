@@ -1,0 +1,11 @@
+[Unit]
+Description=drefd dashboard
+After=network.target
+
+[Service]
+User=root
+ExecStart=/opt/drefd-dash/drefd_dash.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
